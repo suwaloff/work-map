@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<plugin name="cordova-plugin-android-permissions" source="npm" spec="^1.1.5" />
+<preference name="AndroidPersistentFileLocation" value="Compatibility" />
+<preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,root" />
+<access origin="file:*/*" />
+<allow-navigation href="file:*/*" />
+<preference name="allowFileAccessFromFileURLs" value="true" />
+<preference name="allowUniversalAccessFromFileURLs" value="true" />
+<preference name="Fullscreen" value="true" />
+<preference name="orientation" value="landscape" />
+
+    <name>work map</name>
+    <icon src="www/img/1.png"/>
+    <description>Sample Apache Cordova App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+<config-file parent="/manifest" target="AndroidManifest.xml">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    
+</config-file>
+</widget>
