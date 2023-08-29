@@ -61,6 +61,7 @@ function App() {
               minZoom={12}
               maxZoom={21}
               minNativeZoom={16}
+              maxNativeZoom={20}
             />
           </LayersControl.BaseLayer>
           <LayersControl.BaseLayer name="Карта 2">
@@ -76,6 +77,7 @@ function App() {
                 minZoom={12}
                 maxZoom={20}
                 minNativeZoom={16}
+                maxNativeZoom={20}
               />
             </LayerGroup>
           </LayersControl.BaseLayer>
